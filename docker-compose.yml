@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  rasa:
+    build: .     # Construire l'image depuis le Dockerfile du dossier courant
+    container_name: unibot-rasa
+    ports:
+      - "5005:5005"   # Mapping port hôte:port conteneur
+    volumes:
+      - ./models:/app/models  # Partager le dossier models avec le conteneur
+    restart: unless-stopped
+
+  web:
+    image: nginx:alpine  #utilise l'image officielle nginx(serveur web leger)
+    container_name: unibot-web
+    ports:
+      - "8080:80"  # Ton interface sera accessible sur localhost:8080
+    volumes:
+      - ./interface.html:/usr/share/nginx/html/index.html
+    depends_on:
+      - rasa  #nginx ne demarre qu'apres Rasa
+    restart: unless-stopped

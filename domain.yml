@@ -1,0 +1,63 @@
+
+
+version: "3.1"
+
+intents:
+  - saluer
+  - au_revoir
+  - demander_chapitres_module
+  - demander_emploi_du_temps
+  - demander_enseignant_module
+  - demander_horaires_bibliotheque
+  - demander_attestation_scolarite
+  - demander_info_bourse
+  - demander_calendrier_examens
+  - demander_contact_administration
+  - remercier
+  - affirmer
+  - nier
+  - out_of_scope
+
+responses:
+  utter_saluer:
+  - text: "Bonjour ! Je suis UniBot, votre assistant universitaire. Comment puis-je vous aider aujourd'hui ?"
+
+  utter_au_revoir:
+  - text: "Au revoir ! N'hésitez pas à revenir si vous avez d'autres questions."
+
+  utter_chapitres_module:
+  - text: "Le module M126 (Cloud Computing, Virtualisation et Sécurité) comprend les chapitres suivants : 1) Introduction au Cloud Computing, 2) Virtualisation, 3) Conteneurisation, 4) Sécurité dans le Cloud, 5) Chatbots intelligents."
+
+  utter_emploi_du_temps:
+  - text: "Voici votre emploi du temps : Lundi 9h-12h Cloud Computing, Mardi 14h-17h Intelligence Artificielle, Jeudi 9h-12h Sécurité Informatique."
+
+  utter_enseignant_module:
+  - text: "Le module Cloud Computing, Virtualisation et Sécurité est enseigné par le Pr Charaf Ouaddi."
+
+  utter_horaires_bibliotheque:
+  - text: "La bibliothèque est ouverte du lundi au vendredi de 8h30 à 18h00, et le samedi de 9h00 à 13h00."
+
+  utter_attestation_scolarite:
+  - text: "Pour obtenir une attestation de scolarité, rendez-vous au service de scolarité avec votre carte d'étudiant, ou faites la demande en ligne sur le portail étudiant."
+
+  utter_info_bourse:
+  - text: "Les demandes de bourse se font auprès du service des affaires sociales, généralement en début d'année universitaire. Apportez votre dossier administratif et vos justificatifs de revenus."
+
+  utter_calendrier_examens:
+  - text: "Les examens du semestre 2 sont prévus du 15 au 30 juin 2026. Le planning détaillé sera affiché sur le portail étudiant deux semaines avant."
+
+  utter_contact_administration:
+  - text: "Vous pouvez contacter le service de scolarité au 05XX-XXXXXX ou par email à scolarite@uit.ac.ma."
+
+  utter_remercier:
+  - text: "Avec plaisir ! Autre chose pour vous aider ?"
+
+  utter_default:
+  - text: "Désolé, je n'ai pas compris votre demande. Pouvez-vous reformuler ?"
+
+  utter_out_of_scope:
+  - text: "Désolé, je ne peux pas répondre à cette question. Je suis spécialisé dans l'assistance aux services universitaires. Comment puis-je vous aider sur ce sujet ?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_next_session: true

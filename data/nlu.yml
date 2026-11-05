@@ -1,0 +1,128 @@
+version: "3.1"
+
+nlu:
+- intent: saluer
+  examples: |
+    - Bonjour
+    - Salut
+    - Bonsoir
+    - Hello
+    - Coucou
+    - Bonjour à vous
+    - Salut tout le monde
+
+- intent: au_revoir
+  examples: |
+    - Au revoir
+    - À bientôt
+    - Bye
+    - Merci, au revoir
+    - À plus tard
+    - Salut, à la prochaine
+
+- intent: demander_chapitres_module
+  examples: |
+    - Quels sont les chapitres du module M126 ?
+    - Donne-moi la liste des chapitres du module M126
+    - Programme du module M126
+    - Que contient le module M126 ?
+    - C'est quoi le contenu de M126 ?
+    - Liste des chapitres de M126 s'il te plaît
+
+- intent: demander_emploi_du_temps
+  examples: |
+    - Quel est mon emploi du temps du lundi ?
+    - Montre-moi mon planning de cours
+    - J'ai cours quand cette semaine ?
+    - Quel est mon horaire de cours aujourd'hui ?
+    - Donne-moi mon emploi du temps de la semaine
+    - Quels sont mes cours cette semaine ?
+    - Peux-tu m'afficher mon planning d'étude ?
+
+- intent: demander_enseignant_module
+  examples: |
+    - Qui enseigne le module Cloud Computing ?
+    - Qui enseigne le module M126 ?
+    - Quel est le professeur du module M126 ?
+    - Quel professeur donne le cours M126 ?
+    - Qui donne le cours de virtualisation ?
+    - Qui est le prof de Cloud Computing ?
+    - Quel enseignant est responsable du module M126 ?
+    - Qui est le responsable du module Cloud Computing ?
+
+- intent: demander_horaires_bibliotheque
+  examples: |
+    - Quels sont les horaires de la bibliothèque ?
+    - La bibliothèque est ouverte quand ?
+    - À quelle heure ferme la bibliothèque ?
+    - Horaires d'ouverture bibliothèque
+    - La bibliothèque est ouverte le samedi ?
+
+- intent: demander_attestation_scolarite
+  examples: |
+    - Comment obtenir une attestation de scolarité ?
+    - Je veux une attestation de scolarité
+    - Où demander mon certificat de scolarité ?
+    - Procédure attestation de scolarité
+    - J'ai besoin d'une attestation pour mon dossier
+
+- intent: demander_info_bourse
+  examples: |
+    - Comment faire une demande de bourse ?
+    - Je veux des infos sur la bourse
+    - Quelles sont les conditions pour la bourse ?
+    - Comment postuler à une bourse ?
+    - Quand ouvrent les demandes de bourse ?
+
+- intent: demander_calendrier_examens
+  examples: |
+    - Quand sont les examens du semestre 2 ?
+    - Donne-moi le calendrier des examens
+    - C'est quand les examens ?
+    - Date des examens semestre 2
+    - Quand commencent les examens ?
+
+- intent: demander_contact_administration
+  examples: |
+    - Comment contacter le service de scolarité ?
+    - Numéro du service administratif
+    - Email de la scolarité
+    - Comment joindre l'administration ?
+    - Coordonnées du service de scolarité
+
+- intent: remercier
+  examples: |
+    - Merci beaucoup
+    - Merci
+    - Je vous remercie
+    - Top, merci
+    - Merci infiniment
+
+- intent: affirmer
+  examples: |
+    - Oui
+    - Oui exactement
+    - Tout à fait
+    - Bien sûr
+    - Oui c'est ça
+
+- intent: nier
+  examples: |
+    - Non
+    - Non merci
+    - Pas vraiment
+    - Non pas du tout
+    - Non c'est pas ça
+
+- intent: out_of_scope
+  examples: |
+    - Quelle est la météo aujourd'hui ?
+    - Quel temps fait-il ?
+    - Quel est le score du match hier ?
+    - Raconte-moi une blague
+    - Quelle heure est-il ?
+    - Quel est le prix du pétrole ?
+    - Comment va la bourse aujourd'hui ? Je parle de la bourse en finance
+    - Joue-moi de la musique
+    - Donne-moi les actualités du jour
+    - C'est quoi la capitale de la France ?

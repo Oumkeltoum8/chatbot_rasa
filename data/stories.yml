@@ -1,0 +1,43 @@
+version: "3.1"
+
+stories:
+
+- story: parcours complet avec salutation et question
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+  - intent: demander_chapitres_module
+  - action: utter_chapitres_module
+  - intent: remercier
+  - action: utter_remercier
+  - intent: au_revoir
+  - action: utter_au_revoir
+
+- story: question directe sur emploi du temps puis au revoir
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+  - intent: demander_emploi_du_temps
+  - action: utter_emploi_du_temps
+  - intent: au_revoir
+  - action: utter_au_revoir
+
+- story: question sur la bourse et l'attestation
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+  - intent: demander_info_bourse
+  - action: utter_info_bourse
+  - intent: demander_attestation_scolarite
+  - action: utter_attestation_scolarite
+  - intent: remercier
+  - action: utter_remercier
+
+- story: question sur les examens et contact administration
+  steps:
+  - intent: demander_calendrier_examens
+  - action: utter_calendrier_examens
+  - intent: demander_contact_administration
+  - action: utter_contact_administration
+  - intent: au_revoir
+  - action: utter_au_revoir
